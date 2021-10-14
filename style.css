@@ -1,0 +1,43 @@
+<style>
+
+h1 {
+  background:
+   linear-gradient(to right, #57a613, #bff293)
+   color: black;
+}
+
+h2 {
+ background:
+  linear-gradient(to right, #57a613, #bff293)
+  color: black;
+}
+
+.important {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#fst {
+  color: green;
+}
+p.detail {
+ 
+  line-height: 1em
+}
+
+    body{
+      background-color: white;
+      color: black;
+    }
+    a{
+      color: blue
+    }
+    body.dark{
+      background-color: #112;
+      color: white;
+    }
+    body.dark a{
+      color: cyan;
+    }
+</style>
