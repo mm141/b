@@ -11,3 +11,20 @@ h2 {
 #fst {
   color: green;
 }
+p.detail { line-height: 1em }
+<style>
+    body{
+      background-color: white;
+      color: black;
+    }
+    a{
+      color: blue
+    }
+    body.dark{
+      background-color: #112;
+      color: white;
+    }
+    body.dark a{
+      color: cyan;
+    }
+  </style>
