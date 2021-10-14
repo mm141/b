@@ -1,5 +1,15 @@
+<style>
+
+h1 {
+  background:
+   linear-gradient(to right, #57a613, #bff293)
+   color: black;
+}
+
 h2 {
-  color: blue;
+ background:
+  linear-gradient(to right, #57a613, #bff293)
+  color: black;
 }
 
 .important {
@@ -11,8 +21,11 @@ h2 {
 #fst {
   color: green;
 }
-p.detail { line-height: 1em }
-<style>
+p.detail {
+
+  line-height: 1em
+}
+
     body{
       background-color: white;
       color: black;
