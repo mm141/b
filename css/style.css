@@ -1,4 +1,19 @@
 <style>
+    body{
+      background-color: white;
+      color: black;
+    }
+    a{
+      color: blue
+    }
+    body.dark{
+      background-color: #112;
+      color: white;
+    }
+    body.dark a{
+      color: cyan;
+    }
+</style>
 
 h1 {
   background:
@@ -25,10 +40,43 @@ p.detail {
 
   line-height: 1em
 }
-
+<style>
+h1 {
+   color: black;
+   text-align: center;
+}
+h2 {
+ background:
+  linear-gradient(to right, #BFFF7F, #BFF293);
+  color: black;
+  padding: 10px;
+}
+.important {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+div{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom:15px;
+  padding-right: 20px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+#fst {
+  color: green;
+}
+p.detail {
+  line-height: 1em
+}
     body{
       background-color: white;
       color: black;
+      width: auto;
+      margin: 0 auto;
     }
     a{
       color: blue
@@ -36,6 +84,8 @@ p.detail {
     body.dark{
       background-color: #112;
       color: white;
+      width: auto;
+      margin: 0 auto;
     }
     body.dark a{
       color: cyan;

@@ -15,43 +15,51 @@
     <button onclick="document.querySelector('body').classList.add('dark')">ダークモード</button>
     <button onclick="document.querySelector('body').classList.remove('dark')">ダークモード解除</button>
 <h1>電子リソースリスト</h1>
-<!-- アラート ここから -->
+<!-- モーダル・アラート ここから -->
 <div class="alert alert-primary" role="alert">
 学外からアクセスする方は、ページ下部の「学外からアクセスしたい方はこちら」を押してください。
-<button type="button" class="close" date-dismiss="alert" aria-label="close">
+<button type="button" class="close" data-bs-dismiss="alert" aria-label="close">
  <span aria-hidden="true">×閉じる
  </span>
 </button>
 </div>
-<!-- アラート ここまで -->
+<!-- モーダル・アラート ここまで -->
 
 <!-- コラプス ここから -->
   <p>利用可能な電子リソースの一覧です。</p>
    <h2>Web of Science</h2>
    　<p class="detail">Web of Science は、世界最大の文献データベースのひとつで、引用情報をもとにした検索や分析ができることを最大の特徴としています。</p>
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">1.詳細な説明</a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">2.学外接続 (SSL-VPN)</button>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">全て開く</button>
-</p>
+  <p>
+     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">詳細な説明</a>
+     <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">学外接続 (学認)</button>
+     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-2" aria-expanded="false" aria-controls="multiCollapseExample2-2">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample2-2">全て開閉</button>
+  </p>
 <div class="col">
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample1">
       <div class="card card-body">
-        <p class=detail>Web of Scienceは、次の3つのデータベースで構成されています。</p>
+        <table><tr><td class="detail">Web of Scienceは、次の3つのデータベースで構成されています。
          <ol><li>Science Citation Index Expanded（自然科学系）</li>
 <li>Social Science Citation Index（社会科学系）</li>
 <li>Arts & Humanites Citation Index（人文科学系）</li></ol>
 <p>これら3種類のデータベースを合わせると、約12,000誌の学術雑誌がカバーされていて、これらのデータは毎週アップデートされていますので、利用者は常に最新の情報の入手が可能です。なお、通常は3つのデータベースの違いを特に意識することは
-ありません。</p>
+ありません。</td></tr></table>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="collapse multi-collapse" id="multiCollapseExample2">
       <div class="card card-body">
-        以下のリンクからログインしてください。
-        <a href="#" target="_blank">SSL-VPNサービスログイン</a>
+        <table><tr><td class="gakunin">学認によるログイン方法の説明</td></tr></table>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2-2">
+      <div class="card card-body">
+        <table><tr><td class="vpn">以下のリンクからログインしてください。
+        <a href="#" target="_blank">SSL-VPNサービスログイン</a></td></tr></table>
       </div>
     </div>
   </div>
@@ -59,47 +67,56 @@
    <h2>CiNii</h2>
    　<p class="detail">説明</p>
    <p>
-     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">1.詳細な説明</a>
-     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">2.学外接続 (SSL-VPN)</button>
-     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">全て開く</button>
+     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">詳細な説明</a>
+     <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">学外接続 (学認)</button>
+     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4-2" aria-expanded="false" aria-controls="multiCollapseExample4-2">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample3 multiCollapseExample4 multiCollapseExample4-2">全て開閉</button>
    </p>
+
    <div class="col">
      <div class="col">
-       <div class="collapse multi-collapse" id="multiCollapseExample1">
+       <div class="collapse multi-collapse2" id="multiCollapseExample3">
          <div class="card card-body">
-           詳細な説明
+           <table><tr><td class="detail">詳細な説明</td></tr></table>
          </div>
        </div>
      </div>
      <div class="col">
-       <div class="collapse multi-collapse" id="multiCollapseExample2">
-         <div class="card card-body">
-　　　　　　以下のリンクからログインしてください。
-           <a href="#" target="_blank">SSL-VPNサービスログイン</a>
-         </div>
+      <div class="collapse multi-collapse2" id="multiCollapseExample4">
+       <div class="card card-body">
+        <table><tr><td class="gakunin">学認によるログイン方法の説明</td></tr></table>
        </div>
+      </div>
+     </div>
+     <div class="col">
+     <div class="collapse multi-collapse2" id="multiCollapseExample4-2">
+      <div class="card card-body">
+        <table><tr><td class="vpn">以下のリンクからログインしてください。
+         <a href="#" target="_blank">SSL-VPNサービスログイン</a></td></tr></table>
+       </div>
+      </div>
      </div>
    </div>
    <h2>聞蔵</h2>
    　<p class="detail">説明</p>
    <p>
-     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">1.詳細な説明</a>
-     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">2.学外接続 (SSL-VPN)</button>
-     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">全て開く</button>
+     <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">詳細な説明</a>
+     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample5 multiCollapseExample6">全て開閉</button>
    </p>
    <div class="col">
      <div class="col">
-       <div class="collapse multi-collapse" id="multiCollapseExample1">
+       <div class="collapse multi-collapse3" id="multiCollapseExample5">
          <div class="card card-body">
-           詳細な説明
+           <table><tr><td class="gakunin">詳細な説明</td></tr></table>
          </div>
        </div>
      </div>
      <div class="col">
-       <div class="collapse multi-collapse" id="multiCollapseExample2">
+       <div class="collapse multi-collapse3" id="multiCollapseExample6">
          <div class="card card-body">
-           以下のリンクからログインしてください。
-           <a href="#" target="_blank">SSL-VPNサービスログイン</a>
+           <table><tr><td class="vpn">以下のリンクからログインしてください。
+           <a href="#" target="_blank">SSL-VPNサービスログイン</a></td></tr></table>
          </div>
        </div>
      </div>
@@ -107,7 +124,6 @@
 <!-- コラプス ここまで -->
 
 <!-- モーダル・アラート ここから -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   学外からアクセスしたい方はこちら
