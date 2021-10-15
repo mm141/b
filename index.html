@@ -13,8 +13,10 @@
 <!-- 追加to -->
   </head>
   <body>
-    <button onclick="document.querySelector('body').classList.add('dark')">ダークモード</button>
-    <button onclick="document.querySelector('body').classList.remove('dark')">ダークモード解除</button>
+    <div class="darkmord">
+     <button onclick="document.querySelector('body').classList.add('dark')">ダークモード</button>
+     <button onclick="document.querySelector('body').classList.remove('dark')">ダークモード解除</button>
+    </div>
 <h1>電子リソースリスト</h1>
 <!-- モーダル・アラート ここから -->
 <div class="alert alert-primary" role="alert">
@@ -31,10 +33,10 @@
    <h2>Web of Science</h2>
    　<p class="detail">Web of Science は、世界最大の文献データベースのひとつで、引用情報をもとにした検索や分析ができることを最大の特徴としています。</p>
   <p>
-     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">詳細な説明</a>
-     <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">学外接続 (学認)</button>
-     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-2" aria-expanded="false" aria-controls="multiCollapseExample2-2">学外接続 (SSL-VPN)</button>
-     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample2-2">全て開閉</button>
+     <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">詳細な説明</a>
+     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">学外接続 (学認)</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-2" aria-expanded="false" aria-controls="multiCollapseExample2-2">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample2-2">全て開閉</button>
   </p>
 <div class="col">
   <div class="col">
@@ -44,8 +46,7 @@
          <ol><li>Science Citation Index Expanded（自然科学系）</li>
 <li>Social Science Citation Index（社会科学系）</li>
 <li>Arts & Humanites Citation Index（人文科学系）</li></ol>
-<p>これら3種類のデータベースを合わせると、約12,000誌の学術雑誌がカバーされていて、これらのデータは毎週アップデートされていますので、利用者は常に最新の情報の入手が可能です。なお、通常は3つのデータベースの違いを特に意識することは
-ありません。</td></tr></table>
+<p>これら3種類のデータベースを合わせると、約12,000誌の学術雑誌がカバーされていて、これらのデータは毎週アップデートされていますので、利用者は常に最新の情報の入手が可能です。</td></tr></table>
       </div>
     </div>
   </div>
@@ -68,10 +69,10 @@
    <h2>CiNii</h2>
    　<p class="detail">説明</p>
    <p>
-     <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">詳細な説明</a>
-     <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">学外接続 (学認)</button>
-     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4-2" aria-expanded="false" aria-controls="multiCollapseExample4-2">学外接続 (SSL-VPN)</button>
-     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample3 multiCollapseExample4 multiCollapseExample4-2">全て開閉</button>
+     <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">詳細な説明</a>
+     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">学外接続 (学認)</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4-2" aria-expanded="false" aria-controls="multiCollapseExample4-2">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse2" aria-expanded="false" aria-controls="multiCollapseExample3 multiCollapseExample4 multiCollapseExample4-2">全て開閉</button>
    </p>
 
    <div class="col">
@@ -102,14 +103,14 @@
    　<p class="detail">説明</p>
    <p>
      <a class="btn btn-secondary" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">詳細な説明</a>
-     <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">学外接続 (SSL-VPN)</button>
-     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample5 multiCollapseExample6">全て開閉</button>
+     <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">学外接続 (SSL-VPN)</button>
+     <button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse3" aria-expanded="false" aria-controls="multiCollapseExample5 multiCollapseExample6">全て開閉</button>
    </p>
    <div class="col">
      <div class="col">
        <div class="collapse multi-collapse3" id="multiCollapseExample5">
          <div class="card card-body">
-           <table><tr><td class="gakunin">詳細な説明</td></tr></table>
+           <table><tr><td class="detail">詳細な説明</td></tr></table>
          </div>
        </div>
      </div>
